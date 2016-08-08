@@ -115,10 +115,10 @@ RUN \
 
 # Copy Conf
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY nginx.default.conf /etc/nginx/conf.d/default.conf
 
 # Volume
-VOLUME ["/usr/share/nginx/html"]
+VOLUME ["/usr/share/nginx"]
+VOLUME ["/etc/nginx/conf.d"]
 VOLUME ["/var/log/nginx"]
 
 EXPOSE 80 443 8444
