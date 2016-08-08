@@ -118,7 +118,6 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY nginx.default.conf /etc/nginx/conf.d/default.conf
 
 # Volume
-VOLUME ["/etc/nginx/nginx.conf"]
 VOLUME ["/usr/share/nginx/html"]
 VOLUME ["/var/log/nginx"]
 
